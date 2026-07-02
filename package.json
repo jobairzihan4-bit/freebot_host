@@ -1,15 +1,7 @@
 {
-  "name": "telegram-bot-express",
-  "version": "1.0.0",
-  "type": "module",
-  "scripts": {
-    "start": "node server.js",
-    "dev": "node server.js",
-    "build": "echo 'No build required'"
-  },
-  "dependencies": {
-    "dotenv": "^16.4.5",
-    "express": "^4.21.2",
-    "telegraf": "^4.16.3"
-  }
+  "name":"test-telegram-bot",
+  "version":"1.0.0",
+  "main":"server.js",
+  "scripts":{"start":"node server.js"},
+  "dependencies":{"express":"^4.19.2"}
 }
