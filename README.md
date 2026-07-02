@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 TeleGuard Render Bot Host
+# 🚀 JZ Studio Bot Host
 
 ### Deploy Your Telegram Bot on Render in Minutes
 
