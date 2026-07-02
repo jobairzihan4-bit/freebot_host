@@ -1,6 +1,21 @@
-const express=require('express');
-const app=express();
-const PORT=process.env.PORT||3000;
-app.get('/',(_,res)=>res.send('<body style="background:#000;color:#0f0;font-family:sans-serif;display:flex;align-items:center;justify-content:center;height:100vh">Bot Host Online</body>'));
-console.log('Telegram bot placeholder started');
-app.listen(PORT,()=>console.log('Server '+PORT));
+import express from 'express';
+import path from 'path';
+import { fileURLToPath } from 'url';
+import { startBot } from './bot.js';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const app = express();
+const PORT = process.env.PORT || 3000;
+
+// Serve public folder
+app.use(express.static(path.join(__dirname, 'public')));
+
+// Start Telegram Bot
+startBot();
+
+// Start Express Server
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Web Server is running on port ${PORT}`);
+});
