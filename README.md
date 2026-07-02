@@ -31,7 +31,7 @@ npm start
 BOT_TOKEN=your_token
 PORT=3000
 
-##শুরুতেই AI-কে দিলে AI বুঝবে কীভাবে bot project বানাতে হবে + কোথায় কী করতে হবে।
+## শুরুতেই AI-কে দিলে AI বুঝবে কীভাবে bot project বানাতে হবে + কোথায় কী করতে হবে।
 You are a senior Node.js developer.
 
 I want to build a Telegram Bot + Express Web Server project.
